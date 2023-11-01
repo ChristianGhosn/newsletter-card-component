@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* write your CSS here */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-card {
+  margin: 2em;
+  max-width: 1094px;
+  box-shadow: 12px 12px 0px 0px #c5aea7;
+  border: 1px solid #374151;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  padding: 46px;
+  border-radius: 16px;
+}
+
+h1 {
+  color: #111827;
+  text-align: center;
+  font-family: "Merriweather";
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  color: #374151;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+p {
+  color: #111827;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.email-input {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 72px;
+}
+
+.email-input-text {
+  width: 100%;
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: 1px solid #b3b8d8;
+  background: #fafaff;
+  color: #b3b8d8;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.email-input-button {
+  height: 72px;
+  padding: 16px 32px;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  transition: transform 1s;
+}
+
+.email-input-button:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.agreement input {
+  height: 20px;
+  width: 20px;
+  border-radius: 6px;
+  border: 1px solid #111827;
+}
+
+@media only screen and (max-width: 740px) {
+  .email-input {
+    flex-wrap: wrap;
+  }
+  .email-input-button {
+    width: 100%;
+  }
+}
